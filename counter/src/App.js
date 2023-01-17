@@ -7,10 +7,10 @@ function App() {
   return (
     <div className='flex flex-col min-h-screen'>
       <header>
-        <h1 className='text-6xl text-center py-4 font-eater'>Counter Things</h1>
+        <h1 className='text-6xl text-center py-6 font-eater'>Counter Things</h1>
       </header>
       <main className='grow'>
-        <h2 className='font-montserrat text-center text-2xl'>
+        <h2 className='font-montserrat text-center text-2xl py-3'>
           Wanna count things?
         </h2>
         <Counter />
