@@ -59,13 +59,13 @@ const Counter = () => {
       <p className='font-eater text-9xl'>{count}</p>
       <div className='flex flex-col gap-8'>
         <button
-          className='py-4 px-6 text-5xl bg-sky-600 text-sky-300 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-sky-700 transition duration-150 ease-in-out'
+          className='py-4 px-6 text-5xl bg-sky-600 text-sky-300 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-sky-700 transition duration-150 ease-in-out active:scale-90'
           onClick={counterDisplay}
         >
           Count
         </button>
         <button
-          className='py-4 px-6 text-5xl bg-rose-400 text-rose-800 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-rose-500 transition duration-150 ease-in-out'
+          className='py-4 px-6 text-5xl bg-rose-400 text-rose-800 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-rose-500 transition duration-150 ease-in-out active:scale-90'
           onClick={resetCounter}
         >
           Reset
