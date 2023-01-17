@@ -9,7 +9,7 @@ function App() {
       <header>
         <h1 className='text-6xl text-center py-6 font-eater'>Counter Things</h1>
       </header>
-      <main className='grow'>
+      <main className='grow bg-transparent'>
         <h2 className='font-montserrat text-center text-2xl py-3'>
           Wanna count things?
         </h2>
