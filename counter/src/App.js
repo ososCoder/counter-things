@@ -2,12 +2,18 @@ import './App.css';
 import { useState } from 'react';
 import github from './icons/github.svg';
 import linkedin from './icons/linkedin.svg';
+import demogorgon from './pics/demogorgon.png';
 
 function App() {
   return (
     <div className='flex flex-col min-h-screen'>
       <header>
-        <h1 className='text-6xl text-center py-6 font-eater'>Counter Things</h1>
+        <h1 className='text-6xl text-center pt-6 pb-3 font-eater'>
+          Counter Things
+        </h1>
+        <h2 className='font-eater text-center text-2xl py-3'>
+          Demogorgon counter
+        </h2>
       </header>
       <main className='grow bg-transparent'>
         <h2 className='font-montserrat text-center text-2xl py-3'>
@@ -15,7 +21,7 @@ function App() {
         </h2>
         <Counter />
       </main>
-      <footer className='flex justify-center items-center gap-3 py-4 bg-black'>
+      <footer className='flex justify-center items-center gap-3 py-6 bg-black'>
         <p className='text-xl text-center text-slate-50 font-montserrat'>
           Made by ososCoder
         </p>
@@ -59,13 +65,14 @@ const Counter = () => {
       <p className='font-eater text-9xl'>{count}</p>
       <div className='flex flex-col gap-8'>
         <button
-          className='py-4 px-6 text-5xl bg-sky-600 text-sky-300 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-sky-700 transition duration-150 ease-in-out active:scale-90'
+          className='flex justify-center items-center h-[5rem] gap-2 py-4 px-6 text-5xl bg-sky-600 text-sky-300 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-sky-700 transition duration-50 ease-in-out active:scale-90'
           onClick={counterDisplay}
         >
           Count
+          <img src={demogorgon} alt='demogorgon' className='w-10' />
         </button>
         <button
-          className='py-4 px-6 text-5xl bg-rose-400 text-rose-800 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-rose-500 transition duration-150 ease-in-out active:scale-90'
+          className='h-[5rem] py-4 px-6 text-5xl bg-rose-400 text-rose-800 rounded-lg font-montserrat font-medium shadow-md cursor-pointer uppercase active:bg-rose-500 transition duration-200 ease-in-out active:scale-90'
           onClick={resetCounter}
         >
           Reset
